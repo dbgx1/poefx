@@ -24,6 +24,7 @@ MainWindow::~MainWindow() { delete ui; }
 
 bool MainWindow::startTcp()
 {
+  //封盖
   if (m_client->Start("192.168.50.246", 56789))
   {
     log("连接服务器成功");
